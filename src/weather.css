@@ -1,0 +1,80 @@
+/* Css code for Weather App    */
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .weatherinput {
+    flex: 1;
+    padding: 12px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 9px;
+    font-size: 16px;
+    border-radius: 200px;
+  }
+  
+  .weatherbutton {
+    padding: 7px 12px;
+    margin-top: 9px;
+    font-size: 16px;
+    background-color: #007bff;
+    border-radius: 200px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .weather-info {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .weather-info h2 {
+    margin-bottom: 10px;
+  }
+  
+  .weather-info p {
+    margin: 5px 0;
+  }
+  .err{
+    color: #fff;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.weatherbody{
+  background: linear-gradient(to bottom right, #2623ca ,#1e2c52);
+  height:100vh;
+}
+
+.weathercontain{
+  background: linear-gradient(to bottom right, #3163d1 ,#041e68);
+  height:55vh;
+  width:30vw;
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+.snow{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("https://cdn.discordapp.com/attachments/744182992037216260/990023034524033105/snow1.png"), url("https://cdn.discordapp.com/attachments/744182992037216260/990023034758922250/snow2.png"), url("https://cdn.discordapp.com/attachments/744182992037216260/990023034951827556/snow3.png");
+    
+    animation: snow 20s linear  infinite ;
+  }
+  @keyframes snow {
+    0% {
+      background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+      background-position: 500px 1000px, 400px 400px, 300px 300px;
+    }
+  }
